@@ -5,43 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verano Awards 2025</title>
     <style>
+        /* Estilos base elegantes */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #293133;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 0;
-            padding: 20px;
+            min-height: 100vh;
         }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
         h1 {
-            color: #efbf04;
-            margin-bottom: 20px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            font-size: 2.5rem;
+            margin: 0;
+            background: linear-gradient(to right, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
-        .form-container {
-            width: 100%;
+
+        .subtitle {
+            color: #94a3b8;
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Contenedor del Formulario */
+        .form-wrapper {
+            width: 95%;
             max-width: 800px;
-            background: white;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            margin-bottom: 40px;
         }
+
+        /* Ajuste para que el iframe sea responsive */
         iframe {
             width: 100%;
-            height: 800px; /* Puedes ajustar esta altura */
+            height: 1200px; /* Ajustado para que no haya doble scroll en el form */
             border: none;
+            display: block;
+        }
+
+        /* Optimización para Celulares */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            header { padding: 30px 15px; }
+            iframe { height: 1500px; } /* Un poco más de alto para móvil */
         }
     </style>
 </head>
 <body>
 
-    <h1>Verano Awards 2025 🏆</h1>
+    <header>
+        <h1>Verano Awards 2025 🏆</h1>
+        <p class="subtitle">La gala definitiva entre amigos</p>
+    </header>
 
-    <div class="form-container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRPn2xIfloHB4aZ1PShva-9-JZG4s9vKT8-a39_eJ-Z9O4ZQ/viewform?embedded=true" width="640" height="12030" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-    </div>
+    <main class="form-wrapper">
+        <iframe 
+            src="TU_URL_DE_GOOGLE_FORMS_AQUI" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0">
+            Cargando…
+        </iframe>
+    </main>
 
 </body>
-
 </html>
